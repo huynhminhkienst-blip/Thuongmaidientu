@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fdfcfc;
+    color: #000000;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 10px 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background: linear-gradient(90deg, #b1b5f7, #b1b5f7);
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-size: 32px;
+    font-weight: 900;
+    color: #0d00c4ab;
+    font-style: italic;
+}
+
+.nav__list {
+   display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.nav__list li a{
+    font-size: 25px;
+}
+.nav__link {
+    position: relative;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #111;
+
+    padding: 10px 18px;
+
+    border-radius: 12px;
+
+    transition: all .3s ease;
+}
+
+.nav__link:hover {
+    color: #f2f3f7;
+    background: blue;
+    border-radius: 10px;
+    transform: translateY(-2px);
+}
+.nav__link.active {
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #2563eb
+    );
+
+    color: #fff;
+
+    font-weight: 800;
+
+    box-shadow:
+    0 8px 20px rgba(37,99,235,.3);
+}
+.nav__link.active::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    transform: translateX(-50%);
+
+    width: 8px;
+    height: 8px;
+
+    background: #2563eb;
+
+    border-radius: 50%;
+}
+
+.nav__icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav__icon {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav__icon:hover {
+    transform: scale(1.15);
+}
+main{
+    background:#0C1220;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fdfcfc;
+    padding: 20px;
+}
+.tieude H1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+   
+}
+.tieude h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.support h2{
+    color: #fdfcfc;
+    margin-bottom: 10px;
+}
+.support div ul li b{
+    color: #fdfcfc;
+}
+.main-lienhe{
+    display: flex;
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    gap: 30px;
+}
+.support{
+    padding: 0px 30px;
+    font-size: 20px;
+     color: #95a2d4;
+
+}
+.thongtin{
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+.thongtin label{
+    
+    margin-bottom: 8px;
+}
+.thongtin input,
+.thongtin textarea{
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+textarea{
+    resize: vertical;
+}
+
+.btn-group{
+    display: flex;
+    gap: 20px;
+}
+.support{
+    flex: 1;
+}
+
+.thongtin{
+    flex: 1;
+}
+.btn-group input{
+    background: #6c7fc9;
+    color: rgb(250, 250, 250);
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.btn-group input:hover{
+    background: #09316d;
+    cursor: pointer;
+
+}
+input{
+    font-size: 20px;
+    border-radius: 5px;
+}
+.footer {
+    background: #fbfafc;
+    padding: 60px 0;
+    color: #000;
+}
+
+.footer__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer__title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer__list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer__btn {
+    display: block;
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 150px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer__bottom h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer__bottom p {
+    max-width: 570px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer__bottom {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer__bottom-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer__bottom-desc {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.footer__social img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer__social img:hover {
+    transform: scale(1.2);
+}
+
+.footer__sub {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.footer__text-center {
+    font-size: 14px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.footer__copyright {
+    background: #0a3dad;
+    text-align: center;
+
+    padding: 20px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 36px;
+}
+
+@media (max-width: 1024px) {
+
+    .nav {
+        padding: 0 20px;
+    }
+
+    .nav__list {
+        gap: 25px;
+    }
+
+    .nav__list li a {
+        font-size: 20px;
+    }
+
+    .main-lienhe {
+        width: 90%;
+        gap: 30px;
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .nav__logo {
+        font-size: 28px;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav__list li a {
+        font-size: 18px;
+    }
+
+    .nav__icons {
+        gap: 15px;
+    }
+
+    /* TITLE */
+    .tieude h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .tieude h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* CONTACT */
+    .main-lienhe {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .support,
+    .thongtin {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .support {
+        font-size: 18px;
+    }
+
+    /* FORM */
+    .thongtin input,
+    .thongtin textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    /* BUTTON */
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .btn-group input {
+        flex: 1;
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer__title {
+        font-size: 16px;
+    }
+
+    .footer__text,
+    .footer__list {
+        font-size: 14px;
+    }
+
+    .footer__bottom-title {
+        font-size: 18px;
+    }
+
+    .footer__bottom-desc {
+        font-size: 14px;
+    }
+
+    .footer__social img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* COPYRIGHT */
+    .footer__copyright {
+        min-height: auto;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px){
+
+    .main-lienhe{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .support,
+    .thongtin{
+        padding: 0;
+    }
+
+    .tieude h1{
+        font-size: 22px;
+    }
+
+    .tieude h3{
+        font-size: 15px;
+    }
+
+    .footer__container{
+        padding: 0 15px;
+    }
+
+    .footer__copyright{
+        font-size: 16px;
+    }
+}
